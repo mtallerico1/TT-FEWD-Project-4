@@ -25,6 +25,7 @@
 input[type="search"] {
     height: 40px;
     width: 60%;
+    max-width: 400px;
     color: white;
     font-size: 16pt;
     background: transparent;
@@ -38,10 +39,15 @@ figcaption {
 
 img {
     border: 2px solid #6ed3cf;
-    border-radius: 2px;
+    border-radius: 5px;
     -webkit-box-shadow: 0px 0px 44px -18px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 44px -18px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 44px -18px rgba(0,0,0,0.75);
+    transition: 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 
