@@ -12,14 +12,15 @@
 }
 
 .img-row {
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
     width: 100%;
 }
 
 .img-column {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 input[type="search"] {
@@ -37,7 +38,7 @@ figcaption {
     display: none;
 }
 
-img {
+#gallery img {
     border: 2px solid #6ed3cf;
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 44px -18px rgba(0,0,0,0.75);
@@ -46,7 +47,7 @@ img {
     transition: 1s;
 }
 
-img:hover {
+#gallery img:hover {
     transform: scale(1.1);
 }
 
