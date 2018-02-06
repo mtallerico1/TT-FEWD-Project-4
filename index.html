@@ -6,83 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Incredible Photo Gallery</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="search-bar">
-        <input type="search" id="mySearch" name="searchImg" placeholder="Search" onkeyup="searchImages()">
+        <input type="search" id="mySearch" name="searchImg" placeholder="Search" onkeyup="searchImage()">
     </div>
     <div class="img-row" id="gallery-container">
         <div class="img-column" id="gallery">
-            <a href="photo_gallery_v3\photos\01.jpg" data-fancybox data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+            <a href="photo_gallery_v3\photos\01.jpg" data-fancybox="group" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\01.jpg" alt="Picture of straw fields" title="hay bales">
                     <figcaption>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\02.jpg" data-fancybox data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+            <a href="photo_gallery_v3\photos\02.jpg" data-fancybox="group" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\02.jpg" alt="Picture of a calm lake" title="lake">
                     <figcaption>The lake was so calm today. We had a great view of the snow on the mountains from here.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\03.jpg" data-fancybox data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <a href="photo_gallery_v3\photos\03.jpg" data-fancybox="group" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\03.jpg" alt="Picture of a canyone from above" title="canyon">
                     <figcaption>I hiked to the top of the mountain and got this picture of the canyon and trees below.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\04.jpg" data-fancybox data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+            <a href="photo_gallery_v3\photos\04.jpg" data-fancybox="group" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\04.jpg" alt="Picture of an iceberg" title="iceberg">
                     <figcaption>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\05.jpg" data-fancybox data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">    
+            <a href="photo_gallery_v3\photos\05.jpg" data-fancybox="group" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">    
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\05.jpg" alt="Picture of a red desert" title="desert">
                     <figcaption>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\06.jpg" data-fancybox data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+            <a href="photo_gallery_v3\photos\06.jpg" data-fancybox="group" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\06.jpg" alt="Picture of the leaves chaging color" title="fall">
                     <figcaption>Fall is coming, I love when the leaves on the trees start to change color.</figcaption>
                 </figure>
             </a>
-            <a href="photo_gallery_v3\photos\07.jpg" data-fancybox data-caption="I drove past this plantation yesterday, everything is so green!">    
+            <a href="photo_gallery_v3\photos\07.jpg" data-fancybox="group" data-caption="I drove past this plantation yesterday, everything is so green!">    
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\07.jpg" alt="Picture of green fields and trees" title="plantation">
                     <figcaption>I drove past this plantation yesterday, everything is so green!</figcaption>
                 </figure>
             </a>    
-            <a href="photo_gallery_v3\photos\08.jpg" data-fancybox data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!.">    
+            <a href="photo_gallery_v3\photos\08.jpg" data-fancybox="group" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!.">    
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\08.jpg" alt="Picture of sand dunes close to the beach" title="dunes">
                     <figcaption>My summer vacation to the Oregon Coast. I love the sandy dunes!.</figcaption>
                 </figure>
             </a>    
-            <a href="photo_gallery_v3\photos\09.jpg" data-fancybox data-caption=">We enjoyed a quiet stroll down this countryside lane.">
+            <a href="photo_gallery_v3\photos\09.jpg" data-fancybox="group" data-caption=">We enjoyed a quiet stroll down this countryside lane.">
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\09.jpg" alt="Picture of small dirt road through a path of trees" title="countryside lane">
                     <figcaption>We enjoyed a quiet stroll down this countryside lane.</figcaption>
                 </figure>
             </a>    
-            <a href="photo_gallery_v3\photos\10.jpg" data-fancybox data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">    
+            <a href="photo_gallery_v3\photos\10.jpg" data-fancybox="group" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">    
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\10.jpg" alt="Picture of a sunset over the ocean" title="sunset">
                     <figcaption>Sunset at the coast! The sky turned a lovely shade of orange.</figcaption>
                 </figure>
             </a>    
-            <a href="photo_gallery_v3\photos\11.jpg" data-fancybox data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">    
+            <a href="photo_gallery_v3\photos\11.jpg" data-fancybox="group" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">    
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\11.jpg" alt="Picture from within a cave looking over a countryside" title="cave">
                     <figcaption>I did a tour of a cave today and the view of the landscape below was breathtaking.</figcaption>
                 </figure>
             </a>    
-            <a href="photo_gallery_v3\photos\12.jpg" data-fancybox data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">        
+            <a href="photo_gallery_v3\photos\12.jpg" data-fancybox="group" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">        
                 <figure>
                     <img src="photo_gallery_v3\photos\thumbnails\12.jpg" alt="Picture of a field of bluebell flowers" title="bluebells">
                     <figcaption>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</figcaption>
@@ -93,5 +92,10 @@
 <script src="js\jquery-3.3.1.min.js"></script>
 <script src="js\jquery.fancybox.min.js"></script>
 <script src="js\scripts.js"></script>
+<script type="text/javascript">
+    $("[data-fancybox]").fancybox({
+        arrows : true
+	});
+</script>
 </body>
 </html>
