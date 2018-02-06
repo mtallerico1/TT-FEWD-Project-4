@@ -1,16 +1,18 @@
-let searchInput = document.getElementById('mySearch').value;
+let searchBox = document.getElementById('mySearch');
 let captions = document.querySelectorAll('figcaption');
-let textWords;
 
-// let figureText = captions.textContent;
+searchBox.addEventListener("keyup", searchImage);
 
-function searchImage(input) {
-    for (i=0; i<=captions.length; i++) {
+function searchImage() {
+    for (var i=0; i<captions.length; i++) {
         figureText = captions[i].textContent;
-        // figureText = textWords.textContent;
-        if (figureText.search() === searchInput) {
-            console.log(yeah);
+        searchInput = searchBox.value;
+        doesContain = figureText.search(searchInput);
+        if (doesContain === -1) {
+            console.log('does not contain');
+        } else {
+            console.log(figureText);
         }
-    };
-}
+    }
+};
 
