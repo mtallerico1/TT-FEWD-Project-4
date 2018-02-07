@@ -11,7 +11,9 @@ function searchImage() {
         parentEl = captions[i].parentElement.parentElement;
         if (doesContain === -1) {
             parentEl.classList.add("hideImage");
-        } 
+        } else if (doesContain != -1) {
+            parentEl.classList.remove("hideImage");
+        }
     }
 };
 
