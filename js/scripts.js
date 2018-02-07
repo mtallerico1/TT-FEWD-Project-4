@@ -5,14 +5,13 @@ searchBox.addEventListener("keyup", searchImage);
 
 function searchImage() {
     for (var i=0; i<captions.length; i++) {
-        figureText = captions[i].textContent;
-        searchInput = searchBox.value;
+        figureText = captions[i].textContent.toLowerCase();
+        searchInput = searchBox.value.toLowerCase();
         doesContain = figureText.search(searchInput);
+        parentEl = captions[i].parentElement.parentElement;
         if (doesContain === -1) {
-            console.log('does not contain');
-        } else {
-            console.log(figureText);
-        }
+            parentEl.classList.add("hideImage");
+        } 
     }
 };
 
