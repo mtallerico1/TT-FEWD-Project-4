@@ -1,1 +1,3 @@
-# TT-FEWD Project 4
+# Teamtreehouse-FEWD Project 4
+
+A simple searchable image gallery. 
